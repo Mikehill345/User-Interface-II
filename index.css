@@ -31,6 +31,15 @@ h2{
   padding:1%;
   font-size:4rem;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 header p{
   display:flex;
   justify-content:center;
@@ -54,59 +63,98 @@ nav{
   padding:1%
 }
 .hero-image{
-  background-image:url('https://images.unsplash.com/photo-1592564630984-7410f94db184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1329&q=80');
-  height:90vh;
+ display:flex;
+ justify-content:center;
+}
+.hero-image-two{
+  width:90%;
+  height:5%;
+
 }
 img{
-  width:20%;
-  height:100%;
-}
-.Dog{
-  display:flex;
-  align-items:stretch;
-}
-.paragraph{
-  width:20%;
-  height:100%;
-  padding:8%;
-  font-size:2.2rem;
+  width:21%;
+  height:90%;
 }
 .pictures{
   display:flex;
-  padding:1% 0 1% 0;
+  align-items:center;
+  margin:5%;
+}
+.paragraph{
+  width:20%;
+  padding:4%;
+  font-size:2rem;
+}
+.container{
+  display:flex;
+  padding:5% 0 0 0;
 }
 footer{
   background-color:#818181ec;
 }
-.media{
+.bottom{
   display:flex;
   justify-content:center;
+  width:auto;
 }
 .fa{
-  padding: 20px;
-    font-size: 30px;
-    width: 70px;
-    border-radius: 50%;
+  padding: 2px;
+    font-size: 3rem;
+    width:auto;
     text-decoration: none;
-    margin: 5px 5px;
+    margin: .5%;
+    border:0;
 }
 .fa-facebook{
-  background: #3B5998;
   color: white;
 }
 .fa-instagram{
-  background: #125688;
   color: white;
 }
 .fa-twitter{
-  background: #55ACEE;
   color: white;
 }
 .fa-pinterest{
-  background: #cb2027;
     color: white;
 }
 .fa-youtube{
-  background: #bb0000;
   color: white;
+}
+@media(max-width:800px){
+.pictures{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.container img{
+  width:50%;
+padding:2%;
+ justify-content:space-evenly;
+ height:auto;
+}
+.paragraph{
+  width:auto;
+  padding:0;
+}
+.fa{
+  padding:2px;
+}
+}
+@media(max-width:500px){
+  nav{
+    display:flex;
+    flex-direction:column;
+    margin:1%;
+    width:60%;
+    margin:0 auto;
+  }
+  a{
+    text-align:center;
+  }
+  .fa{
+    padding:3%;
+  }
+  h1{
+    font-size:4rem;
+  }
 }
