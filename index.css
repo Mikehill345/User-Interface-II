@@ -1,0 +1,160 @@
+/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Teko:wght@500&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    max-width:100%;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:2rem;
+    font-weight:normal;
+    font-family: 'Teko', sans-serif;
+  background:#414141;
+  color:white;
+  line-height:1.5;
+}
+h1{
+    font-family: 'Cinzel', serif;
+  text-align:center;
+  padding:2%;
+  font-size:6rem;
+}
+h2{
+  text-align:center;
+  padding:1%;
+  font-size:4rem;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+header p{
+  display:flex;
+  justify-content:center;
+  padding:2%;
+  margin:0 15%;
+}
+a{
+  text-decoration:none;
+  color:white;
+  padding:1% 2%;
+  font-size:2.2rem;
+  border:5px solid #54E3E3;
+  transition:2s;
+}
+a:hover{
+  background-color:black
+}
+nav{
+  display:flex;
+  justify-content:center;
+  padding:1%
+}
+.hero-image{
+ display:flex;
+ justify-content:center;
+}
+.hero-image-two{
+  width:90%;
+  height:5%;
+
+}
+img{
+  width:21%;
+  height:90%;
+}
+.pictures{
+  display:flex;
+  align-items:center;
+  margin:5%;
+}
+.paragraph{
+  width:20%;
+  padding:4%;
+  font-size:2rem;
+}
+.container{
+  display:flex;
+  padding:5% 0 0 0;
+}
+footer{
+  background-color:#818181ec;
+}
+.bottom{
+  display:flex;
+  justify-content:center;
+  width:auto;
+}
+.fa{
+  padding: 2px;
+    font-size: 3rem;
+    width:auto;
+    text-decoration: none;
+    margin: .5%;
+    border:0;
+}
+.fa-facebook{
+  color: white;
+}
+.fa-instagram{
+  color: white;
+}
+.fa-twitter{
+  color: white;
+}
+.fa-pinterest{
+    color: white;
+}
+.fa-youtube{
+  color: white;
+}
+@media(max-width:800px){
+.pictures{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.container img{
+  width:50%;
+padding:2%;
+ justify-content:space-evenly;
+ height:auto;
+}
+.paragraph{
+  width:auto;
+  padding:0;
+}
+.fa{
+  padding:2px;
+}
+}
+@media(max-width:500px){
+  nav{
+    display:flex;
+    flex-direction:column;
+    margin:1%;
+    width:60%;
+    margin:0 auto;
+  }
+  a{
+    text-align:center;
+  }
+  .fa{
+    padding:3%;
+  }
+  h1{
+    font-size:4rem;
+  }
+}
